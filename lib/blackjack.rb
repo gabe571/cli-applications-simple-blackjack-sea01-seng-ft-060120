@@ -38,7 +38,7 @@ def initial_round
   sum
 end
 
-def hit?(user_hand)
+def hit?(user_hand, invalid_command)
   # code hit? here
   #puts user_hand
   prompt_user
