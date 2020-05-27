@@ -42,7 +42,7 @@ def hit?(current_card_value)
   prompt_user
   user_input = get_user_input
   while user_input != "h" && user_input != "s"
-   print invalid_command
+   invalid_command
     prompt_user
     user_input = get_user_input
   end
