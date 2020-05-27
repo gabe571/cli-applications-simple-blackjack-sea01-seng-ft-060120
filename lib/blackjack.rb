@@ -38,6 +38,7 @@ def initial_round
   sum
 end
 
+
 def hit?(user_hand)
   # code hit? here
   #puts user_hand
