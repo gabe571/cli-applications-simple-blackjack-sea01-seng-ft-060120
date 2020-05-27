@@ -38,32 +38,20 @@ def initial_round
   sum
 end
 
-def hit?(user_hand)
-  # code hit? here
-  #puts user_hand
+def hit?(current_card_value)
   prompt_user
   user_input = get_user_input
-
-  if user_input != 'h' && user_input != 's'
+  while user_input != "h" && user_input != "s"
     invalid_command
     prompt_user
     user_input = get_user_input
   end
-
-  if user_input == 'h'
-    new_card = deal_card
-    user_hand += new_card
-  elsif user_input == 's'
-    user_hand
+  if user_input == "h"
+    current_card_value += deal_card
   end
-  user_hand
+  return current_card_value
 end
-
-def invalid_command
-  # code invalid_command here
-  puts "Please enter a valid command."
-end
-
+ 
 #####################################################
 # get every test to pass before coding runner below #
 #####################################################
